@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1180px;
+  margin: auto;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .container .logo {
+  max-width: 553px;
+}
+header .container .logo img {
+  width: 100%;
+  display: block;
+}
+header .container nav ul {
+  display: flex;
+}
+header .container nav ul li {
+  list-style: none;
+  margin-right: 49px;
+}
+header .container nav ul li:last-of-type {
+  margin-right: 0;
+}
+header .container nav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 32px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.main_banner {
+  background-image: url("../images/main_banner.png");
+  background-size: cover;
+  height: 100vh;
+}
+.main_banner .container .main_box {
+  padding-top: 250px;
+}
+.main_banner .container .main_box h2 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 38px;
+  color: #FFFFFF;
+  max-width: 540px;
+  margin-bottom: 60px;
+}
+.main_banner .container .main_box a {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  background: #FCE000;
+  border-radius: 10px;
+  padding: 10px 48px;
+  max-width: 299px;
+  margin-bottom: 21px;
+}
+.main_banner .container .main_box h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+.power {
+  padding: 60px 0;
+}
+.power .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.power .container .power_box h1 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 110px;
+  line-height: 76px;
+  text-align: center;
+  color: #000000;
+  max-width: 591px;
+  margin-bottom: 15px;
+}
+.power .container .power_box h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 70px;
+  text-align: center;
+  letter-spacing: 0.21em;
+  color: #000000;
+}
+.power .container .power_second_box p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 32px;
+  line-height: 39px;
+  color: #000000;
+  margin-bottom: 20px;
+  max-width: 479px;
+}
+.power .container .power_second_box a {
+  text-decoration: none;
+  background: #FCE000;
+  border-radius: 10px;
+  padding: 10px 48px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: #000000;
+}
+
+.description {
+  background-color: #FCE000;
+  padding: 46px 0 31px;
+}
+.description .description_info p {
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: #000000;
+}
+.description .description_info p:first-of-type {
+  margin-bottom: 54px;
+}
+
+.invincibility {
+  margin-top: 60px;
+}
+.invincibility .container {
+  box-shadow: 0 258px 103px rgba(0, 0, 0, 0.01), 0 145px 87px rgba(0, 0, 0, 0.05), 0 64px 64px rgba(0, 0, 0, 0.09), 0 16px 35px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  background: #FFFFFF;
+  padding: 60px 0 88px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.invincibility .container h3 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 48px;
+  line-height: 70px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.21em;
+  color: #000000;
+  max-width: 580px;
+  margin-bottom: 20px;
+}
+.invincibility .container h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  max-width: 980px;
+  margin-bottom: 40px;
+}
+.invincibility .container .invincibility_image {
+  max-width: 780px;
+  margin-bottom: 60px;
+}
+.invincibility .container .invincibility_image img {
+  display: block;
+  width: 100%;
+}
+.invincibility .container p {
+  max-width: 980px;
+  margin-bottom: 60px;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  display: flex;
+  align-items: center;
+  text-align: justify;
+  color: #000000;
+}
+.invincibility .container .invincibility_link {
+  margin-left: 100px;
+  align-self: flex-start;
+}
+.invincibility .container .invincibility_link a {
+  text-decoration: none;
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+  background: #FCE000;
+  border-radius: 10px;
+  padding: 10px 53px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=style.css.map */
