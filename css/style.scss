@@ -439,3 +439,114 @@ header{
       }
     }
   }
+footer {
+  background-color: black;
+  padding-bottom: 31px;
+  .container {
+    .logo {
+      max-width: 553px;
+     margin: auto;
+      img {
+        width: 100%;
+        display: block;
+      }
+    }
+    .footer_box{
+      margin-top: 57px;
+      display: flex;
+      justify-content: space-around;
+      .box_items{
+        .items_form{
+          display: flex;
+          flex-direction: column;
+          ::placeholder{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: justify;
+            color: white;
+          }
+          input{
+            width: 532px;
+            border-bottom: 1px solid #FFFFFF;
+            border-top: 0;
+            border-right: 0;
+            border-left: 0;
+            padding: 10px 0;
+            background-color: black;
+            margin-bottom: 40px;
+            color: white;
+          }
+          button{
+            padding: 11px 41px;
+            max-width: 380px;
+            background: #FCE000;
+            border-radius: 10px;
+            border: none;
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 29px;
+            text-align: justify;
+            color: #000000;
+            cursor: pointer;
+            margin-bottom: 61px;
+            &:hover{
+              background-color: royalblue;
+              color: yellow;
+            }
+          }
+        }
+        .footer_links{
+          margin-bottom: 102px;
+          a{
+            margin-right: 25px;
+            text-decoration: none;
+            &:last-of-type{
+              margin-right: 0;
+            }
+          }
+        }
+      }
+      .list{
+        li{
+          margin-bottom: 10px;
+          font-family: $main_font;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 24px;
+          line-height: 39px;
+          display: flex;
+          align-items: center;
+          color: #FFFFFF;
+          &:hover{
+            transform: scale(1.1);
+          }
+          &:first-of-type{
+            font-family: $main_font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 32px;
+            line-height: 39px;
+            display: flex;
+            align-items: center;
+            color: #FFFFFF;
+            margin-bottom: 62px;
+          }
+        }
+      }
+    }
+    .text{
+      font-family: $main_font;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13px;
+      line-height: 25px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.5);
+    }
+  }
+}

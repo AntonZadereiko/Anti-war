@@ -420,4 +420,110 @@ header .container nav ul li a:hover {
   color: #000000;
 }
 
+footer {
+  background-color: black;
+  padding-bottom: 31px;
+}
+footer .container .logo {
+  max-width: 553px;
+  margin: auto;
+}
+footer .container .logo img {
+  width: 100%;
+  display: block;
+}
+footer .container .footer_box {
+  margin-top: 57px;
+  display: flex;
+  justify-content: space-around;
+}
+footer .container .footer_box .box_items .items_form {
+  display: flex;
+  flex-direction: column;
+}
+footer .container .footer_box .box_items .items_form ::placeholder {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: white;
+}
+footer .container .footer_box .box_items .items_form input {
+  width: 532px;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  padding: 10px 0;
+  background-color: black;
+  margin-bottom: 40px;
+  color: white;
+}
+footer .container .footer_box .box_items .items_form button {
+  padding: 11px 41px;
+  max-width: 380px;
+  background: #FCE000;
+  border-radius: 10px;
+  border: none;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: justify;
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 61px;
+}
+footer .container .footer_box .box_items .items_form button:hover {
+  background-color: royalblue;
+  color: yellow;
+}
+footer .container .footer_box .box_items .footer_links {
+  margin-bottom: 102px;
+}
+footer .container .footer_box .box_items .footer_links a {
+  margin-right: 25px;
+  text-decoration: none;
+}
+footer .container .footer_box .box_items .footer_links a:last-of-type {
+  margin-right: 0;
+}
+footer .container .footer_box .list li {
+  margin-bottom: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+footer .container .footer_box .list li:hover {
+  transform: scale(1.1);
+}
+footer .container .footer_box .list li:first-of-type {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+  margin-bottom: 62px;
+}
+footer .container .text {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /*# sourceMappingURL=style.css.map */
