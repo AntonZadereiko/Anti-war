@@ -64,10 +64,10 @@ header {
             &:last-of-type {
               margin-right: 0;
             }
-.header_link{
-  &:hover{
-    color: #979797;
-  }
+            .header_link{
+                &:hover{
+                 color: #979797
+                }
 }
             a {
               display: inline-block;
@@ -671,11 +671,17 @@ header {
         margin-top: 57px;
         display: flex;
         justify-content: space-around;
-
+        @include max-screen(845px){
+          flex-direction: column;
+          align-items: center;
+        }
         .box_items {
           .items_form {
             display: flex;
             flex-direction: column;
+            @include max-screen(390px){
+              display: none;
+            }
 
             ::placeholder {
               font-family: $main_font;
@@ -697,6 +703,9 @@ header {
               background-color: black;
               margin-bottom: 40px;
               color: white;
+              @include max-screen(845px){
+                width: 350px;
+              }
             }
 
             button {
@@ -714,6 +723,10 @@ header {
               color: #000000;
               cursor: pointer;
               margin-bottom: 61px;
+              @include max-screen(845px){
+                width: 350px;
+                padding: 7px 20px;
+              }
 
               &:hover {
                 background-color: royalblue;
@@ -728,6 +741,9 @@ header {
             a {
               margin-right: 25px;
               text-decoration: none;
+              @include max-screen(391px){
+                margin-right: 18px;
+              }
 
               &:last-of-type {
                 margin-right: 0;
@@ -795,17 +811,16 @@ header {
       .donations_box {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
         margin-bottom: 80px;
 
-        .owl-stage {
-          display: flex;
-          justify-content: space-around;
-
-          .owl-item {
-            max-width: 290px;
-          }
-        }
+        //.owl-stage {
+        //  display: flex;
+        //  justify-content: space-around;
+        //
+        //  .owl-item {
+        //    max-width: 290px;
+        //  }
+        //}
 
         .donations_item {
           padding: 19px 13px;

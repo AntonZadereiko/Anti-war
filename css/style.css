@@ -678,9 +678,20 @@ footer .container .footer_box {
   display: flex;
   justify-content: space-around;
 }
+@media screen and (max-width: 845px) {
+  footer .container .footer_box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 footer .container .footer_box .box_items .items_form {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 390px) {
+  footer .container .footer_box .box_items .items_form {
+    display: none;
+  }
 }
 footer .container .footer_box .box_items .items_form ::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -702,6 +713,11 @@ footer .container .footer_box .box_items .items_form input {
   margin-bottom: 40px;
   color: white;
 }
+@media screen and (max-width: 845px) {
+  footer .container .footer_box .box_items .items_form input {
+    width: 350px;
+  }
+}
 footer .container .footer_box .box_items .items_form button {
   padding: 11px 41px;
   max-width: 380px;
@@ -718,6 +734,12 @@ footer .container .footer_box .box_items .items_form button {
   cursor: pointer;
   margin-bottom: 61px;
 }
+@media screen and (max-width: 845px) {
+  footer .container .footer_box .box_items .items_form button {
+    width: 350px;
+    padding: 7px 20px;
+  }
+}
 footer .container .footer_box .box_items .items_form button:hover {
   background-color: royalblue;
   color: yellow;
@@ -728,6 +750,11 @@ footer .container .footer_box .box_items .footer_links {
 footer .container .footer_box .box_items .footer_links a {
   margin-right: 25px;
   text-decoration: none;
+}
+@media screen and (max-width: 391px) {
+  footer .container .footer_box .box_items .footer_links a {
+    margin-right: 18px;
+  }
 }
 footer .container .footer_box .box_items .footer_links a:last-of-type {
   margin-right: 0;
@@ -780,15 +807,7 @@ footer .container .text {
 .donations .container .donations_box {
   display: flex;
   justify-content: space-between;
-  flex-wrap: wrap;
   margin-bottom: 80px;
-}
-.donations .container .donations_box .owl-stage {
-  display: flex;
-  justify-content: space-around;
-}
-.donations .container .donations_box .owl-stage .owl-item {
-  max-width: 290px;
 }
 .donations .container .donations_box .donations_item {
   padding: 19px 13px;

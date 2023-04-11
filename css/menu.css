@@ -272,7 +272,9 @@ body.nav-active .nav__list-item:nth-child(10) {
     left: 43px;
     background: #000;
 }
-
+.header_link :hover{
+     color: #979797;
+ }
 /* #Light
 ================================================== */
 
