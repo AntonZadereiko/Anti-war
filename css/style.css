@@ -10,6 +10,11 @@
   margin: auto;
 }
 
+.header_main {
+  background-color: yellow;
+  position: static;
+}
+
 header {
   position: absolute;
   width: 100%;
@@ -21,22 +26,47 @@ header .container {
 }
 header .container .logo {
   max-width: 553px;
+  position: relative;
+  z-index: 3;
 }
 header .container .logo img {
   width: 100%;
   display: block;
 }
-header .container nav ul {
+@media screen and (max-width: 767px) {
+  header .container .nav-but-wrap {
+    display: inline-block;
+  }
+}
+header .container .nav ul {
   display: flex;
 }
-header .container nav ul li {
+@media screen and (max-width: 975px) {
+  header .container .nav ul {
+    display: block;
+  }
+}
+header .container .nav ul li {
   list-style: none;
   margin-right: 49px;
 }
-header .container nav ul li:last-of-type {
+@media screen and (max-width: 1130px) {
+  header .container .nav ul li {
+    margin-right: 23px;
+  }
+}
+@media screen and (max-width: 975px) {
+  header .container .nav ul li {
+    margin-top: 15px;
+  }
+}
+header .container .nav ul li:last-of-type {
   margin-right: 0;
 }
-header .container nav ul li a {
+header .container .nav ul li .header_link:hover {
+  color: #979797;
+}
+header .container .nav ul li a {
   display: inline-block;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
@@ -48,8 +78,32 @@ header .container nav ul li a {
   text-transform: uppercase;
   color: #FFFFFF;
 }
-header .container nav ul li a:hover {
+@media screen and (max-width: 1060px) {
+  header .container .nav ul li a {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width: 975px) {
+  header .container .nav ul li a {
+    font-size: 21px;
+  }
+}
+header .container .nav ul li a:hover {
   color: yellow;
+}
+header .container .nav .burger_links {
+  display: none;
+  margin-bottom: 102px;
+}
+header .container .nav .burger_links a {
+  margin-right: 25px;
+  text-decoration: none;
+}
+header .container .nav .burger_links a:last-of-type {
+  margin-right: 0;
+}
+header .container .nav .burger_links a img:hover {
+  transform: scale(1.2);
 }
 
 .main_banner {
@@ -60,6 +114,13 @@ header .container nav ul li a:hover {
 .main_banner .container .main_box {
   padding-top: 250px;
 }
+@media screen and (max-width: 1150px) {
+  .main_banner .container .main_box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .main_banner .container .main_box h2 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -69,6 +130,30 @@ header .container nav ul li a:hover {
   color: #FFFFFF;
   max-width: 540px;
   margin-bottom: 60px;
+}
+@media screen and (max-width: 1150px) {
+  .main_banner .container .main_box h2 {
+    font-size: 25px;
+    margin-bottom: 30px;
+    line-height: 34px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .main_banner .container .main_box h2 {
+    margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .main_banner .container .main_box h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main_banner .container .main_box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
 }
 .main_banner .container .main_box a {
   font-family: "Montserrat", sans-serif;
@@ -85,6 +170,22 @@ header .container nav ul li a:hover {
   max-width: 299px;
   margin-bottom: 21px;
 }
+@media screen and (max-width: 1150px) {
+  .main_banner .container .main_box a {
+    margin-bottom: 17px;
+  }
+}
+@media screen and (max-width: 975px) {
+  .main_banner .container .main_box a {
+    margin-bottom: 13px;
+  }
+}
+@media screen and (max-width: 499px) {
+  .main_banner .container .main_box a {
+    padding: 8px 40px;
+    margin-bottom: 10px;
+  }
+}
 .main_banner .container .main_box a:hover {
   background-color: royalblue;
   color: yellow;
@@ -100,6 +201,16 @@ header .container nav ul li a:hover {
   text-align: justify;
   color: #FFFFFF;
 }
+@media screen and (max-width: 1150px) {
+  .main_banner .container .main_box {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .main_banner .container .main_box {
+    font-size: 18px;
+  }
+}
 
 .power {
   padding: 60px 0;
@@ -108,6 +219,16 @@ header .container nav ul li a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1080px) {
+  .power .container {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.power .container .power_box {
+  max-width: 591px;
 }
 .power .container .power_box h1 {
   font-family: "Montserrat", sans-serif;
@@ -119,6 +240,26 @@ header .container nav ul li a:hover {
   color: #000000;
   max-width: 591px;
   margin-bottom: 15px;
+}
+@media screen and (max-width: 610px) {
+  .power .container .power_box h1 {
+    font-size: 90px;
+  }
+}
+@media screen and (max-width: 482px) {
+  .power .container .power_box h1 {
+    font-size: 80px;
+  }
+}
+@media screen and (max-width: 423px) {
+  .power .container .power_box h1 {
+    font-size: 70px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .power .container .power_box h1 {
+    font-size: 60px;
+  }
 }
 .power .container .power_box h3 {
   font-family: "Montserrat", sans-serif;
@@ -140,6 +281,11 @@ header .container nav ul li a:hover {
   margin-bottom: 20px;
   max-width: 479px;
 }
+@media screen and (max-width: 500px) {
+  .power .container .power_second_box p {
+    margin-left: 10px;
+  }
+}
 .power .container .power_second_box a {
   text-decoration: none;
   background: #FCE000;
@@ -153,6 +299,11 @@ header .container nav ul li a:hover {
   text-align: justify;
   color: #000000;
 }
+@media screen and (max-width: 500px) {
+  .power .container .power_second_box a {
+    margin-left: 10px;
+  }
+}
 .power .container .power_second_box a:hover {
   background-color: royalblue;
   color: yellow;
@@ -161,6 +312,11 @@ header .container nav ul li a:hover {
 .description {
   background-color: #FCE000;
   padding: 46px 0 31px;
+}
+@media screen and (max-width: 1190px) {
+  .description {
+    padding: 46px 10px 31px;
+  }
 }
 .description .description_info p {
   font-family: "Roboto", sans-serif;
@@ -188,6 +344,12 @@ header .container nav ul li a:hover {
   justify-content: center;
   align-items: center;
 }
+@media screen and (max-width: 1100px) {
+  .invincibility .container {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
 .invincibility .container h3 {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
@@ -201,6 +363,16 @@ header .container nav ul li a:hover {
   color: #000000;
   max-width: 580px;
   margin-bottom: 20px;
+}
+@media screen and (max-width: 485px) {
+  .invincibility .container h3 {
+    font-size: 38px;
+  }
+}
+@media screen and (max-width: 390px) {
+  .invincibility .container h3 {
+    font-size: 30px;
+  }
 }
 .invincibility .container h4 {
   font-family: "Montserrat", sans-serif;
@@ -236,10 +408,6 @@ header .container nav ul li a:hover {
   text-align: justify;
   color: #000000;
 }
-.invincibility .container .invincibility_link {
-  margin-left: 100px;
-  align-self: flex-start;
-}
 .invincibility .container .invincibility_link a {
   text-decoration: none;
   text-align: justify;
@@ -268,10 +436,21 @@ header .container nav ul li a:hover {
   border-radius: 20px;
   padding: 40px 0;
 }
+@media screen and (max-width: 1200px) {
+  .find_us .container {
+    margin: 0 10px;
+  }
+}
 .find_us .container .find_us_form {
   margin-bottom: 44px;
   display: flex;
   justify-content: space-around;
+}
+@media screen and (max-width: 857px) {
+  .find_us .container .find_us_form {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .find_us .container .find_us_form ::placeholder {
   font-family: "Montserrat", sans-serif;
@@ -290,6 +469,17 @@ header .container nav ul li a:hover {
   border-bottom: 1px solid #000000;
   padding: 10px 0;
 }
+@media screen and (max-width: 857px) {
+  .find_us .container .find_us_form input {
+    margin-bottom: 20px;
+    width: 380px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .find_us .container .find_us_form input {
+    width: 290px;
+  }
+}
 .find_us .container .find_us_form button {
   padding: 11px 41px;
   background: #FCE000;
@@ -303,6 +493,15 @@ header .container nav ul li a:hover {
   text-align: justify;
   color: #000000;
   cursor: pointer;
+  max-width: 380px;
+}
+@media screen and (max-width: 420px) {
+  .find_us .container .find_us_form button {
+    max-width: 290px;
+    padding: 11px 21px;
+    font-size: 18px;
+    line-height: 25px;
+  }
 }
 .find_us .container .find_us_form button:hover {
   background-color: royalblue;
@@ -315,6 +514,11 @@ header .container nav ul li a:hover {
 .find_us .container .find_us_links a {
   margin-right: 80px;
 }
+@media screen and (max-width: 420px) {
+  .find_us .container .find_us_links a {
+    margin-right: 40px;
+  }
+}
 .find_us .container .find_us_links a:last-of-type {
   margin-right: 0;
 }
@@ -323,6 +527,11 @@ header .container nav ul li a:hover {
   margin-top: 60px;
   padding: 59px 0;
   background-color: #FCE000;
+}
+@media screen and (max-width: 1190px) {
+  .graceful {
+    padding: 59px 10px;
+  }
 }
 .graceful p {
   font-family: "Montserrat", sans-serif;
@@ -347,6 +556,11 @@ header .container nav ul li a:hover {
   letter-spacing: 0.21em;
   color: #000000;
 }
+@media screen and (max-width: 1078px) {
+  .last_news .container h3 {
+    margin-left: 10px;
+  }
+}
 .last_news .container .last_news_box {
   display: flex;
   flex-wrap: wrap;
@@ -357,6 +571,18 @@ header .container nav ul li a:hover {
   border-bottom: 1px solid #000000;
   display: flex;
   justify-content: center;
+}
+@media screen and (max-width: 1078px) {
+  .last_news .container .last_news_box .last_news_items {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 1078px) {
+  .last_news .container .last_news_box .last_news_items:nth-child(2) .arrow {
+    top: 9px;
+    right: -8px;
+  }
 }
 .last_news .container .last_news_box .last_news_items:last-of-type {
   margin-top: 20px;
@@ -381,6 +607,16 @@ header .container nav ul li a:hover {
   border-top: 3px solid;
   transform: rotate(46deg);
   border-right: 3px solid;
+}
+@media screen and (max-width: 1078px) {
+  .last_news .container .last_news_box .last_news_items .arrow {
+    top: 24px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .last_news .container .last_news_box .last_news_items .arrow {
+    display: none;
+  }
 }
 .last_news .container .last_news_box .last_news_items .arrow:after {
   content: "";
@@ -408,6 +644,11 @@ header .container nav ul li a:hover {
   margin-top: 40px;
   max-width: 211px;
   border-bottom: 1px solid #000000;
+}
+@media screen and (max-width: 1078px) {
+  .last_news .last_news_link {
+    margin-left: 10px;
+  }
 }
 .last_news .last_news_link a {
   text-decoration: none;
@@ -491,6 +732,9 @@ footer .container .footer_box .box_items .footer_links a {
 footer .container .footer_box .box_items .footer_links a:last-of-type {
   margin-right: 0;
 }
+footer .container .footer_box .box_items .footer_links a img:hover {
+  transform: scale(1.2);
+}
 footer .container .footer_box .list li {
   margin-bottom: 10px;
   font-family: "Montserrat", sans-serif;
@@ -536,7 +780,15 @@ footer .container .text {
 .donations .container .donations_box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   margin-bottom: 80px;
+}
+.donations .container .donations_box .owl-stage {
+  display: flex;
+  justify-content: space-around;
+}
+.donations .container .donations_box .owl-stage .owl-item {
+  max-width: 290px;
 }
 .donations .container .donations_box .donations_item {
   padding: 19px 13px;
@@ -596,12 +848,62 @@ footer .container .text {
   background: #FCE000;
   padding: 59px 0 53px;
 }
+@media screen and (max-width: 1190px) {
+  .help {
+    padding: 59px 10px 53px;
+  }
+}
 .help p {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 32px;
   line-height: 39px;
+  color: #000000;
+}
+
+.project {
+  padding-top: 99px;
+  padding-bottom: 80px;
+}
+.project .container .project_box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
+}
+.project .container .project_box .project_item {
+  padding: 19px 13px;
+  background: #FFFFFF;
+  box-shadow: 0 89px 36px rgba(0, 0, 0, 0.01), 0 50px 30px rgba(0, 0, 0, 0.05), 0 22px 22px rgba(0, 0, 0, 0.09), 0 6px 12px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+}
+.project .container .project_box .project_item:last-of-type {
+  margin-top: 20px;
+}
+.project .container .project_box .project_item .project_image {
+  max-width: 254px;
+  margin-bottom: 18px;
+}
+.project .container .project_box .project_item .project_image img {
+  width: 100%;
+  display: block;
+}
+.project .container .project_box .project_item h4 {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 39px;
+  color: #000000;
+}
+.project .container .project_box .project_item a {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 29px;
   color: #000000;
 }
 
