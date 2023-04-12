@@ -119,23 +119,22 @@ header .container .nav .burger_links a img:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    padding-top: 180px;
+    height: 50%;
   }
 }
 @media screen and (max-width: 850px) {
   .main_banner .container .main_box {
-    padding-top: 450px;
+    padding-top: 200px;
   }
 }
 @media screen and (max-width: 750px) {
   .main_banner .container .main_box {
-    padding-top: 350px;
+    padding-top: 150px;
   }
 }
 @media screen and (max-width: 450px) {
   .main_banner .container .main_box {
-    padding-top: 250px;
+    padding-top: 100px;
   }
 }
 .main_banner .container .main_box h2 {
@@ -819,12 +818,13 @@ footer .container .text {
   padding-bottom: 80px;
 }
 .donations .container {
-  max-width: 950px;
+  max-width: 980px;
 }
 .donations .container .donations_box {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 80px;
+  height: 360px;
 }
 .donations .container .donations_box .donations_item {
   padding: 19px 13px;
@@ -856,6 +856,10 @@ footer .container .text {
   font-size: 20px;
   line-height: 29px;
   color: #000000;
+}
+.donations .container .donations_box .owl-item {
+  display: flex;
+  justify-content: center;
 }
 .donations .container .donations_link {
   max-width: 450px;
@@ -908,11 +912,31 @@ footer .container .text {
   flex-wrap: wrap;
   margin-bottom: 80px;
 }
+@media screen and (max-width: 1120px) {
+  .project .container .project_box {
+    justify-content: space-around;
+  }
+}
 .project .container .project_box .project_item {
   padding: 19px 13px;
   background: #FFFFFF;
   box-shadow: 0 89px 36px rgba(0, 0, 0, 0.01), 0 50px 30px rgba(0, 0, 0, 0.05), 0 22px 22px rgba(0, 0, 0, 0.09), 0 6px 12px rgba(0, 0, 0, 0.1), 0 0 0 rgba(0, 0, 0, 0.1);
   border-radius: 20px;
+}
+@media screen and (max-width: 1120px) {
+  .project .container .project_box .project_item:nth-child(4) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 839px) {
+  .project .container .project_box .project_item:nth-child(3) {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 559px) {
+  .project .container .project_box .project_item:nth-child(2) {
+    margin-top: 20px;
+  }
 }
 .project .container .project_box .project_item:last-of-type {
   margin-top: 20px;
