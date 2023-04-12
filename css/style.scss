@@ -132,10 +132,10 @@ header {
           padding-top: 200px;
         }
         @include max-screen(750px){
-          padding-top: 150px;
+          padding-top: 200px;
         }
         @include max-screen(450px){
-          padding-top: 100px;
+          padding-top: 150px;
         }
 
         h2 {
@@ -865,6 +865,38 @@ header {
           display: flex;
           justify-content: center;
         }
+        .owl-nav .owl-prev{
+          position: absolute;
+          left: -55px;
+          top: 140px;
+          @include max-screen(1100px){
+            display: none;
+          }
+        }
+        .owl-nav .owl-prev:before{
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          content: "\f053";
+          color: black;
+          font-size: 30px;
+        }
+        .owl-nav .owl-next{
+          position: absolute;
+          right: -55px;
+          top: 140px;
+          @include max-screen(1100px){
+            display: none;
+          }
+        }
+        .owl-nav .owl-next:before{
+          font-weight: 900;
+          font-family: "Font Awesome 6 Free";
+          content: "\f053";
+          color: black;
+          font-size: 30px;
+          transform: rotate(180deg);
+          display: inline-block;
+        }
       }
 
       .donations_link {
@@ -891,6 +923,7 @@ header {
           }
         }
       }
+
     }
   }
 
@@ -982,4 +1015,6 @@ header {
 
       }
 }
+
+
 //Burger
