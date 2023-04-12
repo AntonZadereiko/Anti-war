@@ -126,7 +126,19 @@ header {
           display: flex;
           flex-direction: column;
           align-items: center;
+          justify-content: flex-start;
+          padding-top: 180px;
         }
+        @include max-screen(850px){
+          padding-top: 450px;
+        }
+        @include max-screen(750px){
+          padding-top: 350px;
+        }
+        @include max-screen(450px){
+          padding-top: 250px;
+        }
+
         h2 {
           font-family: $main_font;
           font-style: normal;
